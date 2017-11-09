@@ -1,0 +1,21 @@
+# Default NAMESPACE created by R
+# Remove the previous line if you edit this file
+
+# Export all names
+exportPattern(".")
+
+# Import all packages listed as Imports or Depends
+import(
+  rJava,
+  xcms,
+  XML,
+  snow,
+  caTools,
+  bitops,
+  tcltk,
+  gplots,
+  mzR,
+  Rcpp
+)
+importFrom(ptw, asysm)
+importFrom(R.utils, evalWithTimeout)

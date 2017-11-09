@@ -1,0 +1,13 @@
+Package: mzmatch.R
+Type: Package
+Title: mzmatch and PeakML integration for XCMS.
+Version: 2.0-13
+Date: 2015-29-01
+Author: Richard Scheltema <r.a.scheltema@rug.nl>, Andris Jankevics <a.jankevics@rug.nl>, Achuthanuni Chokkathukalam (unni.chokkathukalam@glasgow.ac.uk).
+Maintainer: Andris Jankevics <andris.jankevics@manchester.ac.uk>
+Depends: Rcpp, xcms
+Imports: ptw, R.utils, rJava, XML, snow, caTools, bitops, tcltk, gplots, mzR
+Suggests: 
+Description:  This package provides integration between the PeakML Java library (and its file formats) and the XCMS library.
+License: GPL (>= 2)
+LazyLoad: yes
