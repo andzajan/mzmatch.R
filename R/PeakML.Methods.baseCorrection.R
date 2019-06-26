@@ -5,7 +5,7 @@ PeakML.Methods.baseCorrection <- function(signals, lambda=100){
 	# lambda <- smoothing parameter
  
 	signals[which(signals==NA|signals==Inf|signals==NaN)]=0
-        baseline <- evalWithTimeout({asysm(signals, lambda);}, timeout=10, onTimeout="silent");
+        baseline <- withTimeout({asysm(signals, lambda);}, timeout=10, onTimeout="silent");
 
         if(!is.null(baseline)){
           #baseline <- asysm(signals, lambda)

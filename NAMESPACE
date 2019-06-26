@@ -18,4 +18,4 @@ import(
   Rcpp
 )
 importFrom(ptw, asysm)
-importFrom(R.utils, evalWithTimeout)
+importFrom(R.utils, withTimeout)
