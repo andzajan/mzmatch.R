@@ -63,9 +63,9 @@ References
 .. |mzMatch-ISO| image:: https://img.shields.io/badge/doi-10.1093/bioinformatics/bts674-yellow.svg
    :target: https://doi.org/10.1093/bioinformatics/bts674
 
-.. |Git_commit| image:: https://doi.org/10.1021/ac2000994
+.. |Git_commit| image:: https://img.shields.io/github/last-commit/andzajan/mzmatch.R.svg
    :target: https://github.com/andzajan/mzmatch.R/commits/master
    
-.. |Life_cycle| image::https://img.shields.io/badge/lifecycle-stable-green.svg
+.. |Life_cycle| image:: https://img.shields.io/badge/lifecycle-stable-green.svg
    :target: https://www.tidyverse.org/lifecycle/#stable
    
