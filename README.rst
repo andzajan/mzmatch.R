@@ -35,6 +35,7 @@ Installing mzmatch java libraries
 ------------
 
 .. code-block:: r
+
   library(mzmatch.R)
   mzmatch.init(version.1=FALSE)
   
@@ -45,6 +46,7 @@ The PeakML.Viewer will be installed when called for the
 first time
 
 .. code-block:: r
+
   PeakML.Viewer()
 
 ------------
