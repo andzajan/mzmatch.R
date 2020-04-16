@@ -2,7 +2,7 @@
 mzMatch/PeakML: metabolomics data analysis 
 ==============================================
 
-|Git| |Git_commot| |Life_cyle| |License| |mzmatch| |mzMatch-ISO| 
+|Git| |Git_commit| |Life_cycle| |License| |mzmatch| |mzMatch-ISO| 
 
 mzMatch is a modular, open source and platform independent data processing pipeline for metabolomics LC/MS data written in the Java language. It was designed to provide small tools for the common processing tasks for LC/MS data. The mzMatch environment was based entirely on the PeakML file format and core library, which provides a common framework for all the tools.
 
