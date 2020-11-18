@@ -89,7 +89,7 @@ PeakML.Viewer <- function(arch="detect",install.path=NULL, JHeapSize=1024, unins
 	## java -d32 -XstartOnFirstThread -jar PeakMLViewerOsX.jar
 	if (arch!="Windows_32" & arch!="Windows_64")
 	{
-		java <- paste ("java -d",platform,sep="")
+		java <- "java"
 	} else
 	{
 		java <- "java"
