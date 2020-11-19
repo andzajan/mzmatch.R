@@ -24,10 +24,6 @@ PeakML.Viewer <- function(arch="detect",install.path=NULL, JHeapSize=1024, unins
 			{
 				arch="Linux_64"
 				platform=64
-			} else
-			{
-				arch="Linux_32"
-				platform=32
 			}
 		}
 		if (length(grep("darwin",OS))!=0)
@@ -36,11 +32,7 @@ PeakML.Viewer <- function(arch="detect",install.path=NULL, JHeapSize=1024, unins
 			{
 				arch="OSX_64"
 				platform=64
-			} else
-			{
-				arch="OSX_32"
-				platform=32
-			}
+			} 
 		}
 		if (length(grep("mingw",OS))!=0)
 		{
@@ -48,11 +40,7 @@ PeakML.Viewer <- function(arch="detect",install.path=NULL, JHeapSize=1024, unins
 			{
 				arch="Windows_64"
 				platform=64
-			} else
-			{
-				arch="Windows_32"
-				platform=32
-			}
+			} 
 		}
 	}
 	
@@ -87,14 +75,12 @@ PeakML.Viewer <- function(arch="detect",install.path=NULL, JHeapSize=1024, unins
 
 	## Generate command to star PeakML Viewer
 	## java -d32 -XstartOnFirstThread -jar PeakMLViewerOsX.jar
-	if (arch!="Windows_32" & arch!="Windows_64")
-	{
-		java <- "java"
-	} else
+	if (arch == "Windows_64")
 	{
 		java <- "java"
 	}
-	if (arch=="OSX_32" | arch=="OSX_64")
+	
+	if (arch=="OSX_64")
 	{
 		java <- paste(java, " -XstartOnFirstThread",sep="")
 	}
@@ -106,7 +92,7 @@ PeakML.Viewer <- function(arch="detect",install.path=NULL, JHeapSize=1024, unins
 	{	
 		currentfolder <- getwd ()
 		setwd (install.path)
-		if (arch=="Windows_32" | arch=="Windows_64")
+		if (arch=="Windows_64")
 		{
 			shell (start.command,wait=FALSE)
 		} else
