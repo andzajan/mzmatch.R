@@ -18,8 +18,8 @@ Install
 Prerequisites
 ------------
 
-- R version 3.6.2 or higher
-- Oracle Java 8 JRE (Java Runtime Environment)
+- R version 4.0.3 or higher
+- Oracle Java 15 SE
 - Rstudio (optional)
 
 Installing mzmatch.R package
@@ -29,7 +29,8 @@ Installing mzmatch.R package
 
   install.packages ("remotes")
   Sys.setenv(R_REMOTES_NO_ERRORS_FROM_WARNINGS="true")
-  remotes::install_github("https://github.com/andzajan/mzmatch.R.git")
+  remotes::install_github("https://github.com/andzajan/mzmatch.R.git",
+  build_opts=c("--no-multiarch"), INSTALL_opts=c("--no-test-load"))
 
 Installing mzmatch java libraries
 ------------
