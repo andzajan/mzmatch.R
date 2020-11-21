@@ -79,13 +79,16 @@ PeakML.Viewer <- function(arch="detect",install.path=NULL, JHeapSize=1024, unins
 	{
 		java <- "java"
 	}
-	
+	if(arch == "Linux_64")
+	{
+		java<- "java"
+	}
 	if (arch=="OSX_64")
 	{
 		java <- paste(java, " -XstartOnFirstThread",sep="")
 	}
 	
-	start.command <- paste("java"," -Xms",JHeapSize,"m -Xmx",JHeapSize,"m -jar ",viewerfile_short,sep="")
+	start.command <- paste(java," -Xms",JHeapSize,"m -Xmx",JHeapSize,"m -jar ",viewerfile_short,sep="")
 	
 	## Temporary change working folder to PeakMl viewer path, to load also proper settings.xml file. Satr viewer and change folder back.
 	if (uninstall==FALSE)
