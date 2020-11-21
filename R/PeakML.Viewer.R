@@ -75,6 +75,7 @@ PeakML.Viewer <- function(arch="detect",install.path=NULL, JHeapSize=1024, unins
 
 	## Generate command to star PeakML Viewer
 	## java -d32 -XstartOnFirstThread -jar PeakMLViewerOsX.jar
+	java<- "java"
 	if (arch == "Windows_64")
 	{
 		java <- "java"
