@@ -75,10 +75,12 @@ PeakML.Viewer <- function(arch="detect",install.path=NULL, JHeapSize=1024, unins
 
 	## Generate command to star PeakML Viewer
 	## java -d32 -XstartOnFirstThread -jar PeakMLViewerOsX.jar
-	java<- "java"
 	if (arch=="OSX_64")
 	{
 		java <- paste(java, " -XstartOnFirstThread",sep="")
+	}else
+	{
+		java<-"java"
 	}
 	
 	start.command <- paste(java," -Xms",JHeapSize,"m -Xmx",JHeapSize,"m -jar ",viewerfile_short,sep="")
